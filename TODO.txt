@@ -1,16 +1,18 @@
 PorterViz
 
+Webapp ? 
+
 Docker network stuff:
 
     By network:
-        Containers in network
+        --Containers in network 
         Exposed ports of Containers
-        Type
+        --Type
         
     By Container:
-        Networks
+        --Networks
         ports
-        network types
+        --network types
 
 Adding to/Removing from network
 Expose ports on Networks
