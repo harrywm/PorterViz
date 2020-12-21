@@ -1,0 +1,20 @@
+PorterViz
+
+Docker network stuff:
+
+    By network:
+        Containers in network
+        Exposed ports of Containers
+        Type
+        
+    By Container:
+        Networks
+        ports
+        network types
+
+Adding to/Removing from network
+Expose ports on Networks
+Alter network types
+I/O Traffic graphs
+Request/Response Handling (Like postman)
+Pinging between containers
