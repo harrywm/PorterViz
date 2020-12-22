@@ -8,11 +8,18 @@ import (
 	"github.com/docker/docker/client"
 )
 
-func main() {
+func refreshClient() *client.Client {
+
 	cli, err := client.NewClientWithOpts(client.FromEnv, client.WithAPIVersionNegotiation())
 	if err != nil {
 		panic(err)
 	}
+	return cli
+}
+
+func networkList() {
+
+	cli := refreshClient()
 
 	networks, err := cli.NetworkList(context.Background(), types.NetworkListOptions{})
 	if err != nil {
@@ -30,19 +37,10 @@ func main() {
 			fmt.Println(networkInspect.Containers)
 		}
 	}
+}
 
-	/* 	containers, err := cli.ContainerList(context.Background(), types.ContainerListOptions{})
-		if err != nil {
-			panic(err)
-		}
+func main() {
 
-	 	for _, container := range containers {
+	networkList()
 
-			networks := (container.NetworkSettings.Networks)
-
-			for _, net := range networks {
-				// CAN LISTEN ON THIS  --->
-				//fmt.Println(net, "\n \n")
-			}
-		}  */
 }
