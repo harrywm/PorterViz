@@ -17,9 +17,7 @@ func refreshClient() *client.Client {
 	return cli
 }
 
-func networkList() {
-
-	cli := refreshClient()
+func networkList(cli *client.Client) {
 
 	networks, err := cli.NetworkList(context.Background(), types.NetworkListOptions{})
 	if err != nil {
@@ -41,6 +39,6 @@ func networkList() {
 
 func main() {
 
-	networkList()
+	networkList(refreshClient())
 
 }
