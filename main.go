@@ -7,6 +7,8 @@ import (
 	"github.com/docker/docker/api/types"
 	"github.com/docker/docker/client"
 	"github.com/kr/pretty"
+
+	porternet "porter/donut/porternets"
 )
 
 var cli = refreshClient()
@@ -63,14 +65,54 @@ func getByNetwork(network types.NetworkResource) []types.Container {
 			}
 		}
 	}
-
+	fmt.Printf("%# v", pretty.Formatter(network))
 	fmt.Printf("%# v", pretty.Formatter(netContainers))
 	return netContainers
+}
+
+func allNetworks() []porternet.PorterNetwork {
+
+	var returnNets []porternet.PorterNetwork
+
+	for _, network := range networks {
+		currentContainer := getByNetwork(network)
+
+		net := porternet.PorterNetwork{
+			network.Name
+			network.ID
+			network.Driver
+			{
+				currentContainer.Name
+				currentContainer.ID
+				currentContainer.Ports
+				currentContainer.State
+			}
+		}
+
+		returnNets = append(returnNets, net)
+
+	}
+
+	return returnNets
 
 }
 
 func main() {
 
-	getByNetwork(networks[0])
+	fmt.Printf("%# v", allNetworks())
 
+	//js := mewn.String("./frontend/build/static/js/main.js")
+	//css := mewn.String("./frontend/build/static/css/main.css")
+
+	/* 	app := wails.CreateApp(&wails.AppConfig{
+		Width:  1024,
+		Height: 768,
+		Title:  "PORTER",
+		JS:     js,
+		CSS:    css,
+		Colour: "#131313",
+	}) */
+
+	//app.Bind()
+	//app.Run()
 }

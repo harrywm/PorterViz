@@ -2,16 +2,20 @@ PorterViz
 
 Webapp ? GUI Libraries/Tools?
 
+    ? WAILS ;;
+        WailsInit - allows methods to be called at startup - ClientEnv?
+
+
 Docker network stuff:
 
     By network:
         ✓ Containers in network 
-        Exposed ports of Containers
+        ✓ Exposed ports of Containers
         ✓ Type
         
     By Container:
         ✓ Networks
-        ports
+        ✓ ports
         ✓ network types
 
 Adding to/Removing from network
