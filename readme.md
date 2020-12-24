@@ -8,3 +8,5 @@
  <h2 align="center">
 Docker Network-Container Relationship Visualization and Management Tool 
 </h2> 
+
+Go-powered Docker Network visualization app with a Typescript-React frontend (hopefully).
