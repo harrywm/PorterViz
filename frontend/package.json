@@ -1,0 +1,52 @@
+{
+  "name": "porter",
+  "author": "<>",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@wailsapp/runtime": "^1.0.10",
+    "acorn": "^8.0.4",
+    "html-webpack-plugin": "^4.5.0",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-modal": "3.11.2",
+    "typescript": "^4.1.3",
+    "wails-react-scripts": "^3.0.1-2",
+    "webpack": "^5.11.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "webpack-dev-server --open --config webpack.dev.ts",
+    "build": "webpack --mode production --config webpack.prod.ts"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "babel-loader": "8.0.5",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^4.2.0"
+  }
+}
