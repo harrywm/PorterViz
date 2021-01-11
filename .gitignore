@@ -9,7 +9,8 @@
 /frontend/coverage
 
 # production
-/frontend/build
+/build
+TODO.txt
 
 **/npm-debug.log*
 **/yarn-debug.log*
