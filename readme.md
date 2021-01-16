@@ -6,7 +6,7 @@
 <img width="35" src="https://cdn.worldvectorlogo.com/logos/gopher.svg"/> <img width="35" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png"/> 
 <img width="35" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/typescript-icon.svg"/> 
 <img width="35" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg"/>
-<img src="https://goreportcard.com/badge/github.com/harrywm/PorterViz"/>
+<img src="https://goreportcard.com/badge/github.com/harrywm/PorterViz" align="right"/>
 </div>
 </header>
 <br>
