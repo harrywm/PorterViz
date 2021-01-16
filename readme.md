@@ -2,7 +2,7 @@
  
   PorterViz </h1>
 
- <div align="center"> <img width="30" src="https://cdn.worldvectorlogo.com/logos/gopher.svg"/> <img width="30" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png"/> <img width="30" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/typescript-icon.svg"/> <img width="30" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg"/>
+ <div align="center"> <img width="35" src="https://cdn.worldvectorlogo.com/logos/gopher.svg"/> <img width="35" src="https://www.docker.com/sites/default/files/d8/2019-07/vertical-logo-monochromatic.png"/> <img width="35" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/typescript-icon.svg"/> <img width="35" src="https://raw.githubusercontent.com/gilbarbara/logos/master/logos/react.svg"/>
  </div>
  
  <br>
