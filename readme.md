@@ -6,7 +6,7 @@
  </div>
  
  <div align="center">
- https://goreportcard.com/badge/github.com/harrywm/PorterViz
+ <img src="https://goreportcard.com/badge/github.com/harrywm/PorterViz"/>
  </div>
 
  <h2 align="center">
