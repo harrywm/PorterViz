@@ -3,9 +3,11 @@ module porter/donut
 go 1.15
 
 replace porter/donut/networks v0.0.1 => ./networks
+
 replace porter/donut/gui v0.0.1 => ./gui
 
 require (
+	fyne.io/fyne v1.4.3 // indirect
 	github.com/Microsoft/go-winio v0.4.16 // indirect
 	github.com/containerd/containerd v1.4.3 // indirect
 	github.com/docker/distribution v2.7.1+incompatible // indirect
@@ -20,6 +22,6 @@ require (
 	github.com/opencontainers/image-spec v1.0.1 // indirect
 	github.com/sirupsen/logrus v1.7.0 // indirect
 	google.golang.org/grpc v1.34.0 // indirect
-	porter/donut/networks v0.0.1
 	porter/donut/gui v0.0.1
+	porter/donut/networks v0.0.1
 )
